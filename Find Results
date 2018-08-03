@@ -1,0 +1,39 @@
+Searching 81 files for "omrails"
+
+C:\Users\M\Desktop\omrails\package.json:
+    1  {
+    2:   "name": "omrails",
+    3    "private": true,
+    4    "dependencies": {}
+
+C:\Users\M\Desktop\omrails\app\views\layouts\application.html.erb:
+    2  <html>
+    3    <head>
+    4:     <title>omrails</title>
+    5      <%= csrf_meta_tags %>
+    6      <%= csp_meta_tag %>
+
+C:\Users\M\Desktop\omrails\config\application.rb:
+    7  Bundler.require(*Rails.groups)
+    8  
+    9: module omrails
+   10    class Application < Rails::Application
+   11      # Initialize configuration defaults for originally generated Rails version.
+
+C:\Users\M\Desktop\omrails\config\cable.yml:
+    8    adapter: redis
+    9    url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+   10:   channel_prefix: omrails_production
+   11  
+
+C:\Users\M\Desktop\omrails\config\environments\production.rb:
+   62    # Use a real queuing backend for Active Job (and separate queues per environment)
+   63    # config.active_job.queue_adapter     = :resque
+   64:   # config.active_job.queue_name_prefix = "omrails_#{Rails.env}"
+   65  
+   66    config.action_mailer.perform_caching = false
+
+C:\Users\M\Desktop\omrails\tmp\cache\bootsnap-load-path-cache:
+    <binary>
+
+16 matches across 6 files
